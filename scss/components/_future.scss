@@ -1,0 +1,49 @@
+/* FUTURE */
+
+.future__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.future__list .future__item+.future__item {
+    margin-left: 30px;
+}
+
+.future__item {
+    width: 270px;
+}
+
+.future__text {
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.future__icons {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.antenna,
+.clock,
+.diagram,
+.astronaut {
+    display: block;
+    align-self: center;
+    width: 70px;
+    height: 70px;
+
+}

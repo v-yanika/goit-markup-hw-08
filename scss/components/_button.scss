@@ -1,0 +1,14 @@
+.button {
+    color: var(--accent-text-color);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.96px;
+    border-style: none;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}

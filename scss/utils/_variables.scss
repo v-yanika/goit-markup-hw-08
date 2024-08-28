@@ -1,0 +1,15 @@
+:root {
+    --text-color: #757575;
+    --title-color: #212121;
+    --background-color: #2F303A;
+    --accent-color: #2196F3;
+    --accent-text-color: #FFFFFF;
+
+    // Шрифты
+    --main-font: 'Roboto',
+        sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    // Анимация
+    --base-anim: cubic-bezier(0.4, 0, 0.2, 1)
+}

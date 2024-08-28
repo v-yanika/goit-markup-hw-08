@@ -1,0 +1,15 @@
+.description {
+    padding-bottom: 94px;
+}
+
+.description__list .description__item+.description__item {
+    margin-left: 30px;
+}
+
+.description__list {
+    justify-content: center;
+}
+
+.description__item {
+    position: relative;
+}

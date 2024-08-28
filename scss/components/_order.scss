@@ -1,0 +1,39 @@
+/* ORDER */
+// linear-gradient(to right, #2F303A 40%, #2F303A 40%)
+
+.order {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/ImgBG1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.order__title {
+    display: block;
+    width: 700px;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.order__button {
+    width: 220px;
+    height: 50px;
+    padding: 10px 30px;
+    margin-top: 30px;
+    flex-shrink: 0;
+}

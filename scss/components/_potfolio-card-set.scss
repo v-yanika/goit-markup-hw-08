@@ -1,0 +1,122 @@
+.card__list {
+    width: 1200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 30px / 3);
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+
+.card__portfolio {
+
+    width: 370px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.card__link {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    text-decoration: none;
+    border: 1px solid #EEE;
+    background-color: var(--accent-text-color);
+    transition: box-shadow 250ms var(--base-anim);
+
+    &:hover,
+    &:focus {
+
+        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
+    }
+}
+
+
+
+.card__box {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(33, 150, 243, 0.90);
+    transform: translateY(100%);
+    transition: transform 250ms var(--base-anim), opacity 250ms var(--base-anim);
+
+}
+
+
+.card__link:hover .card__box::before,
+.card__link:focus .card__box::before {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.card__description {
+    position: absolute;
+    left: 24px;
+    top: 63px;
+    width: 322px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 250ms var(--base-anim), opacity 250ms var(--base-anim);
+
+    color: var(--accent-text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.54px;
+}
+
+.card__link:hover .card__description,
+.card__link:focus .card__description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card__content {
+
+    width: 370px;
+    padding: 20px 20px;
+    border: 1px solid #EEE;
+    border-top: none;
+    background-color: var(--accent-text-color);
+}
+
+/* .card__list .card__portfolio+.card__portfolio {
+    margin-bottom: 30px;
+    margin-left: 30px;
+} */
+
+.card__title {
+    color: var(--title-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 1.08px;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+
+
+.card__text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.88;
+    letter-spacing: 0.48px;
+    color: var(--text-color);
+}
